@@ -229,7 +229,7 @@ function SignupView({ onSignupSuccess, onSwitchToLogin }) {
     };
     
     try {
-        const response = await fetch('http://localhost:8000/api/v1/auth/register', {
+        const response = await fetch('http://65.2.61.187/api/v1/auth/register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

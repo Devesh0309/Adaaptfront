@@ -4,7 +4,7 @@ import axios from 'axios';
 
 // --- No changes needed for the instance creation or request interceptor ---
 const apiClient = axios.create({
-  baseURL: 'http://localhost:8000/api/v1',
+  baseURL: 'http://65.2.61.187/api/v1',
 });
 
 apiClient.interceptors.request.use(
@@ -67,7 +67,7 @@ apiClient.interceptors.response.use(
           return Promise.reject(error);
         }
         
-        const rs = await axios.post('http://localhost:8000/api/v1/auth/refresh', {
+        const rs = await axios.post('http://65.2.61.187/api/v1/auth/refresh', {
           refresh_token: refreshToken,
         });
 
