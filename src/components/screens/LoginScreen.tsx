@@ -107,7 +107,7 @@ function LoginView({ onLoginSuccess, onSwitchToSignup }) {
     formData.append('client_secret', '');
 
     try {
-      const response = await fetch('http://65.2.61.187/api/v1/auth/login', {
+      const response = await fetch('https://65.2.61.187:8000//api/v1/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
@@ -229,7 +229,7 @@ function SignupView({ onSignupSuccess, onSwitchToLogin }) {
     };
     
     try {
-        const response = await fetch('http://65.2.61.187/api/v1/auth/register', {
+        const response = await fetch('https://65.2.61.187:8000//api/v1/auth/register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
